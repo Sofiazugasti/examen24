@@ -94,6 +94,6 @@ defmodule JswatchWeb.IndigloManager do
   def handle_info(event, state) do
     IO.inspect(event)
     {:noreply, state}
-    GenServer.cast(pid, :unset_indiglo)
+    GenServer.cast(pid :st, :unset_indiglo)
   end
 end
